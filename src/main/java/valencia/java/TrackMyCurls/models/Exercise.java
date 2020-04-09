@@ -1,6 +1,6 @@
-package valencia.java.TrackMyCurls;
+package valencia.java.TrackMyCurls.models;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,4 +25,16 @@ public class Exercise {
     private Integer sets;
 
     private Integer RPE;
+
+    public Exercise(String exerciseName, String workout, Integer rangeStart, Integer rangeEnd, Integer sets, Integer rpe) {
+        this.exerciseName = exerciseName;
+        this.workout = workout;
+        this.rangeStart = rangeStart;
+        this.rangeEnd = rangeEnd;
+        this.sets = sets;
+        this.RPE = rpe;
+    }
+
+    public Exercise() {
+    }
 }

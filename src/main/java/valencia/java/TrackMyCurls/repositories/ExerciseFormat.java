@@ -1,4 +1,4 @@
-package valencia.java.TrackMyCurls;
+package valencia.java.TrackMyCurls.repositories;
 
 public interface ExerciseFormat {
     Integer getId();
